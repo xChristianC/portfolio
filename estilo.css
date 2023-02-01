@@ -1,0 +1,428 @@
+/* Paleta de Cores
+.Azul bebe { #84bfc3 };
+.branco { #fff5d6 };
+.amarelo { #ffb870 };
+.laranja { #d96153 };
+.preto { #000511 }; 
+*/
+
+/* INICIO */
+    html {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+        background-color: #000511;
+    }
+    h1, h2, h3, h4, h5, p, span {
+        margin: 0;
+        color: #fff5d6;
+    }
+    .container {
+        max-width: 1920px;
+        width: 100%;
+    }
+
+/* Header */
+
+    header{
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
+    }
+
+/* Navbar */
+    nav{
+        position: fixed;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        z-index: 1;
+        
+            
+    }
+    nav:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .nav-container {
+        background-color:#000511;
+        max-width: 1200px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #navlist-left{
+        float: left;
+        height: 100px;
+        line-height: 100px;
+        margin: 0;
+        font-size: 22px;
+        
+    }
+    #navlist-right{
+        float: right;
+        height: 100px;
+        line-height: 100px;
+        margin: 0;
+        font-size: 22px;
+        
+        
+    }
+    #navlist-left li{
+        list-style: none;
+        float: left;
+        margin: 0 15px;
+        
+    }
+    #navlist-right li{
+        list-style: none;
+        float: right;
+        margin: 0 15px;
+        
+        
+    }
+    #navlist-left li a {
+        text-decoration: none;
+        color: #84bfc3;
+        transition: .5s;
+    }
+    #navlist-right li a {
+        text-decoration: none;
+        color: #84bfc3;
+        transition: .5s;
+        
+    }
+    #navlist-right li a:hover {
+        color: #d96153;    
+    }
+    #navlist-left li a:hover {
+        color: #d96153;    
+    }
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+        margin-left: 20%;
+    
+        /*Animação logo */
+        /* animation-name: logo-animation;
+        animation-duration: 3s;
+        animation-iteration-count: initial; */
+
+    }
+    #logo:hover{
+        width: 100px;
+        height: 100px;
+        animation-name: hover-logo;
+        animation-duration: 3s;
+    }
+    @keyframes hover-logo{
+        0%{
+            width: 100px;
+            height: 100px;
+        }
+
+        100%{
+            width: 125px;
+            height: 125px;
+        }
+
+    }
+
+/* Primeira Divisão - Intro */
+
+    #div-intro{
+        background: url(arquivos/notebook.png) no-repeat;
+        background-size: 40%;
+        background-position: 85%;
+        position: relative;
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15em;
+        padding-bottom: 15em;
+        text-align: left;
+    }
+    #h1-intro{
+        color: #d96153;
+        font-size: 50px;
+    }
+    #p-intro{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+/* Segunda Divisão - Sobre */
+
+    #div-sobre{
+        background: url(arquivos/teclado.png) no-repeat;
+        background-size: 40%;
+        background-position: 0;
+        position: relative;
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        text-align: right;
+    }
+    #h1-sobre{
+        margin-right: 0;
+        font-size: 50px;
+        color: #d96153;
+
+    }
+    #p-sobre{
+        width: 50%;
+        margin-left: auto;
+        text-justify: auto;
+        font-size: 20px;
+
+        
+    }
+
+/* Terceira Divisão - Conhecimentos */
+
+    #div-conhecimentos{
+
+        background: url(arquivos/consegui].png) no-repeat;
+        background-size: 35%;    
+        background-position-y: 18em;
+        background-position-x: right;
+        position: relative;
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        text-align: right;
+
+        
+    }
+    #h1-conhecimentos {
+
+        padding-top: 0;
+        margin-top: 0px;
+        font-size: 50px;
+        color: #d96153;
+        text-align: center;
+        
+    }
+    #p-conhecimentos {
+        width: 50%;  
+        font-size: 20px;    
+        text-justify:auto;
+        text-align: left;
+        margin-right: auto;
+        margin-top: 6em;
+
+    }
+
+
+/* Quarta Divisão - Projetos */
+
+    #div-projetos{
+        position: relative;
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        text-align: right;
+    }
+    #h1-projetos {
+        
+        padding-top: 0;
+        margin-top: 0px;
+        font-size: 50px;
+        color: #d96153;
+        text-align: center;
+    }
+    #h2-projetos {
+        margin-top: 2em;
+        color: #84bfc3;
+        text-align: center;
+    }
+    #ul-projetos {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #ul-projetos li a{
+        text-decoration: none;
+        color: #84bfc3;
+                
+        margin-left: 60px;
+        margin-right: 60px;
+        text-justify: auto;
+
+
+    }
+    #ul-projetos li a:hover {
+        color: #d96153;  
+        transition: .5s;  
+    }
+    #lip1 {
+        margin-left: 0;
+        margin-right: 24em;
+    }
+    
+    #imgs-proj{
+
+    }
+    #lip1-img {
+        width: 300px;
+        height: 200px;
+        margin-top: 5em;
+        margin-left: 1;
+        margin-right: 16em;
+        position: relative;
+        
+    }
+    #lip2-img {
+        width: 300px;
+        height: 200px;
+        margin-right: 5em;
+    
+        
+    }
+    #lip1-img:hover{
+        width: 300px;
+        height: 200px;
+        animation-name: certificado-hover;
+        animation-duration: 3s;
+    }
+    #lip2-img:hover{
+        width: 300px;
+        height: 200px;
+        animation-name: certificado-hover;
+        animation-duration: 3s;
+    }
+    @keyframes certificado-hover{
+        0%{
+            width: 300px;
+            height: 200px;
+        }
+
+        100%{
+            width: 325px;
+            height: 225px;
+        }
+
+    }
+
+/* Quinta Divisão - Contatos / Footer */
+
+    #main-footer {
+    background-color: #000511;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    display: flex;
+    border-top: 1px solid #d96153;    
+    }
+    footer h1,h2,h3 {
+        color: #d96153;
+        font-size: 20px;
+    }
+    footer a,p {
+        text-decoration: none;
+        color: #84bfc3;
+    }
+    #hr-footer {
+        border: 2;
+        height: 100px;
+        border-color: #d96153;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    #footer-links {
+        margin-left: auto;
+        margin-right: 6em;
+    }
+    #footer-contatos {
+        margin-right: auto;
+        margin-left: 14em;
+    }
+    #h2-contatos:hover{
+        font-size: 20px;
+        
+        animation-name: contatos-hover;
+        animation-duration: 2s;
+    }
+    @keyframes contatos-hover{
+        0%{
+            font-size: 20px;
+            color: #84bfc3;
+        }
+
+        100%{
+            font-size: 21px;
+            color: #d96153;
+        }
+
+    }
+    #logo-icon{
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+        
+    }
+    #logo-icon2{
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        
+    }
+    #logo-icon3{
+        width: 35px;
+        height: 35px;
+        margin-right: 3px;
+        
+    }
+    #div-what {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+    }
+    #div-email {
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+    }
+    #div-links{
+        display: flex;
+
+        
+    }
+    #div-github {
+        display: flex;
+        margin-top: 15px;
+        margin-right: 18px;
+        align-items: center;
+    }
+    #div-linkedin {
+        display: flex;
+        margin-top: 15px;
+        margin-right: 13px;
+        align-items: center;
+    }
+    #div-curriculo {
+        display: flex;
+        margin-top: 15px;
+        margin-right: 15px;
+        align-items: center;
+    }
